@@ -21,7 +21,6 @@ namespace C0725030_C0730227
     {
         static void Main(string[] args)
         {
-            var students = new Student();
         }
     }
 
@@ -83,6 +82,12 @@ namespace C0725030_C0730227
             q1.Enqueue("JavaEE - FRI - PM - B230");
             q1.Enqueue("SignalProcessing - WED - PM - LAB1");
             q1.Enqueue("EmbeddedProcessor");
+
+            foreach (Object obj in q1)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.ReadKey();
         }
 
         public void Run()
@@ -110,6 +115,28 @@ namespace C0725030_C0730227
         public void Sorter()
         {
             // TO DO : sort the Stack
+            s1.Push("Ema");
+            s1.Push("Olivia");
+            s1.Push("Noah");
+            s1.Push("Liam");
+            s1.Push("Sophia");
+            s1.Push("Mason");
+            s1.Push("Ava");
+            s1.Push("Jacob");
+            s1.Push("William");
+            s1.Push("Isabella");
+            s1.Push("Ethan");
+            s1.Push("Mia");
+            s1.Push("James");
+            s1.Push("Alexander");
+
+            s1.Pop();
+
+            foreach (Object obj in s1)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.ReadKey();
         }
 
         public void Run()
